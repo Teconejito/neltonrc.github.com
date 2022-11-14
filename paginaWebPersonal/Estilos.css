@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor-ilustraciones{
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/*logra que con z indez se coloco detras de un elemento*/
+.forma{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 90%;
+}
+
+.contenedor-ilustraciones :nth-child(1){
+    width: 90%;
+
+}
+
+.contenedor-textos{
+    text-align: center;
+    width: 40%;
+
+}
+
+.contenedor-textos h1{
+    font-size: 60px;
+}
+
+.contenedor-textos p{
+    margin: 15px 0 30px 0;
+    font-size: 18px;
+}
+
+.accion{
+    display: inline-block;
+    background: steelblue;
+    padding: 15px 0;
+    width: 150px;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+}
